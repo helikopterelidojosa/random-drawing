@@ -1,7 +1,15 @@
 var canvas = document.getElementById("myCanvas");
 var ctx = canvas.getContext("2d");
 
-ctx.fillStyle = "#FF0000";
+function rcxy(){
+let r = Math.floor(Math.random()*256); //rgb(255,255,255) the   red
+let g = Math.floor(Math.random()*256); //the green
+let b = Math.floor(Math.random()*256); //the blue
+ctx.fillStyle = "rgba("+r+","+g+","+b+")"; //now put together
+}
+
+
+rcxy();//color
 ctx.fillRect(0,0,400,400);
 
 
